@@ -1,0 +1,37 @@
+name: Validate Zenn content
+
+on:
+  pull_request:
+    paths:
+      - "articles/**"
+      - "books/**"
+      - "images/**"
+      - "package.json"
+      - "package-lock.json"
+      - ".github/workflows/validate.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Load article metadata
+        run: npm run list:articles
+
+      - name: Load book metadata
+        run: npm run list:books
