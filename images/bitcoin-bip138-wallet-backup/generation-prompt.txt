@@ -1,0 +1,15 @@
+Tool: built-in image_gen
+Created: 2026-10-05
+Asset: overview.png
+
+Initial prompt:
+Use case: infographic-diagram
+Asset type: opening illustration for a Japanese Bitcoin technical article, wide landscape 1536x1024.
+Primary request: A lucid editorial infographic explaining BIP138 encrypted wallet metadata backup, in Japanese with very legible large text. White background, dark navy type, orange Bitcoin accents and muted teal recovery accents, clean flat icons, ample whitespace.
+Exact title: "BIP138：鍵と設計図を分けて守る"
+Layout: top short comparison two cards. Left card a key icon titled "シード" and subtitle "署名するための鍵". Right card document schematic icon titled "Descriptor" and subtitle "鍵の組み合わせ・支出条件".
+Main middle flow, left to right: document titled "Descriptor" with small label "秘密鍵は含めない" -> arrow "暗号化" -> locked archive in a cloud titled "暗号化バックアップ".
+Bottom recovery flow left to right: card "自分のシード" -> arrow -> key card "対応するxpub" plus a second input card "暗号化バックアップ" -> merge arrows into unlocked document card "Descriptorを復元".
+Footer exact text: "バックアップの復号 ≠ Bitcoinの支出"
+Small footer second line: "復号に使えるxpubを知る人は、内容を読める"
+Constraints: conceptual diagram only, do not imply seed is uploaded, do not show real keys or seed words, no mathematical formulas, no extra claims, all arrows and labels unambiguous. Professional technical explainer, not a decorative crypto poster.

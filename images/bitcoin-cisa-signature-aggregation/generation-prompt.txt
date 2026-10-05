@@ -1,0 +1,18 @@
+Tool: built-in image_gen
+Created: 2026-10-05
+Asset: overview.png
+
+Initial prompt:
+Use case: infographic-diagram
+Asset type: opening illustration for a Japanese Bitcoin technical article, wide landscape 1536x1024.
+Primary request: Clear Japanese explanatory comparison infographic about CISA cross-input signature aggregation. White background, dark navy text, orange and muted teal accents, flat editorial graphics, large readable text, generous whitespace, same publication style as a Bitcoin educational article.
+Exact title: "CISA：複数入力の署名をまとめる"
+Subtitle: "同じトランザクションの入力3個で比較"
+Three equal vertical columns. Left heading "通常", three separate UTXO input cards labeled "入力A", "入力B", "入力C", each associated with a signature rectangle labeled "64 B"; total badge "192 B". Middle heading "半集約 / BIP458", same three input cards feeding three narrow nonce blocks plus one shared block, total badge "128 B", caption "署名後にまとめる". Right heading "完全集約 / BIP459", same three input cards feeding ONE signature rectangle labeled "64 B", total badge "64 B", caption "対話しながら署名する".
+Bottom strip exact text: "BIP460：これをBitcoinの検証ルールへ組み込む提案"
+Footnotes exact text: "数値は署名データのみ。入力・出力や追加情報は別途必要。"
+and "草案段階：現在のTaproot入力が自動的に小さくなるわけではない"
+Constraints: Do not merge or erase the UTXO input cards; only signature data is compressed. Do not imply entire transaction is 64 bytes. No claim activated. No charts with inaccurate areas. Labels must be accurate and spelled exactly.
+
+Final edit prompt:
+Edit only the middle column of this Japanese CISA infographic. The box to the right of the three nonce 32 B boxes currently has a pen icon and incorrectly says 64 B. Replace its contents with the exact label '共通成分' and '32 B', keeping the box size and styling. The middle column represents three 32-byte nonce parts plus ONE 32-byte shared scalar, totaling 128 B. Preserve absolutely everything else including title, other columns, total 128 B, input cards, footnotes, layout and colors. Do not change the 64 B labels in left or right columns.
