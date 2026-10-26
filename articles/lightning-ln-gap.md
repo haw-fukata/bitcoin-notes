@@ -3,7 +3,7 @@ title: "Lightningでチェスはできるか？ LN-GAPと「沈黙を裁く」�
 emoji: "♟️"
 type: "tech"
 topics: ["bitcoin", "lightning", "blockchain"]
-published: false
+published: true
 ---
 
 ![LN-GAPの全体像。AliceとBobはチャネル内で署名付きの手を交換し、venueが期限内の公開を証明する。不正や無応答による紛争はBitcoin上で解決する。venueの過半数が誠実であるという前提を持つ研究段階の提案。](/images/lightning-ln-gap/overview.png)
