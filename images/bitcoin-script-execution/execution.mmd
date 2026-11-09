@@ -1,0 +1,6 @@
+flowchart TD
+    A["VerifyScript：入力のScript検証の入口"] --> B["witness programを認識"]
+    B --> C["VerifyWitnessProgram：形式ごとの処理"]
+    C --> D["P2WPKH：2要素を確認し命令列を構成"]
+    D --> E["ExecuteWitnessScript → EvalScript"]
+    E --> F["実行結果のスタックを確認"]

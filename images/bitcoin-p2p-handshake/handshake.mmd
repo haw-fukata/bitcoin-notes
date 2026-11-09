@@ -1,0 +1,11 @@
+sequenceDiagram
+    participant A as ノードA
+    participant B as ノードB
+    Note over A,B: transportの準備後・代表的な順序
+    A->>B: version
+    B->>A: version
+    B->>A: wtxidrelay / sendaddrv2
+    B->>A: verack
+    A->>B: wtxidrelay / sendaddrv2
+    A->>B: verack
+    Note over A,B: 以後、用途に応じたデータ交換

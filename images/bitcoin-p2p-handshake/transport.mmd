@@ -1,0 +1,6 @@
+flowchart TD
+    A["TCP接続：バイト列の通り道"] --> B{"使うtransport"}
+    B --> C["v1：平文のメッセージ形式"]
+    B --> D["v2：鍵交換などの準備"]
+    C --> E["Bitcoinのversionメッセージへ"]
+    D --> E

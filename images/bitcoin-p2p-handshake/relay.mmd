@@ -1,0 +1,8 @@
+sequenceDiagram
+    participant A as ノードA
+    participant B as ノードB
+    A->>B: inv：この取引を知っています
+    Note right of B: 未取得で、必要なら要求
+    B->>A: getdata：その取引をください
+    A->>B: tx：取引本体
+    Note right of B: 自分の規則と状態で検証
